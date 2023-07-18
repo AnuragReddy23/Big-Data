@@ -1,0 +1,412 @@
+myHadoop: Using HADOOP_HOME=/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2
+myHadoop: Using MH_SCRATCH_DIR=/scratch/apingili/job_17274177
+myHadoop: Using JAVA_HOME=/cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/openjdk-11.0.2-ysua3xn34v6hnko3reiffhlg2r2q7fol
+myHadoop: Generating Hadoop configuration in directory in /home/apingili/expansecluster...
+myHadoop: Backing up old config dir to /home/apingili/expansecluster.9...
+renamed '/home/apingili/expansecluster' -> '/home/apingili/expansecluster.9'
+myHadoop: Designating exp-12-54 as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+exp-12-54
+WARNING: /scratch/apingili/job_17274177/pids does not exist. Creating.
+WARNING: /scratch/apingili/job_17274177/logs does not exist. Creating.
+2022-11-02 14:08:38,792 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = exp-12-54/198.202.101.109
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 3.2.2
+STARTUP_MSG:   classpath = /home/apingili/expansecluster:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsp-api-2.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-kms-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okio-1.6.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-all-4.1.48.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/java-util-1.9.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/json-io-2.5.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/fst-2.50.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/objenesis-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-client-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/javax.inject-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-router-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-registry-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-submarine-3.2.2.jar
+STARTUP_MSG:   build = Unknown -r 7a3bc90b05f257c8ace2f76d74264906f0f7a932; compiled by 'hexiaoqiao' on 2021-01-03T09:26Z
+STARTUP_MSG:   java = 11.0.2
+************************************************************/
+2022-11-02 19:08:38,798 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-11-02 19:08:38,851 INFO namenode.NameNode: createNameNode [-format, -nonInteractive, -force]
+2022-11-02 19:08:39,164 INFO common.Util: Assuming 'file' scheme for path /scratch/apingili/job_17274177/namenode_data in configuration.
+2022-11-02 19:08:39,164 INFO common.Util: Assuming 'file' scheme for path /scratch/apingili/job_17274177/namenode_data in configuration.
+Formatting using clusterid: CID-da4c308c-db3a-4d95-9734-975c0f3ae5ba
+2022-11-02 19:08:39,185 INFO namenode.FSEditLog: Edit logging is async:true
+2022-11-02 19:08:39,203 INFO namenode.FSNamesystem: KeyProvider: null
+2022-11-02 19:08:39,204 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-11-02 19:08:39,204 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-11-02 19:08:39,241 INFO namenode.FSNamesystem: fsOwner             = apingili (auth:SIMPLE)
+2022-11-02 19:08:39,241 INFO namenode.FSNamesystem: supergroup          = supergroup
+2022-11-02 19:08:39,241 INFO namenode.FSNamesystem: isPermissionEnabled = true
+2022-11-02 19:08:39,241 INFO namenode.FSNamesystem: HA Enabled: false
+2022-11-02 19:08:39,336 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-11-02 19:08:39,342 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-11-02 19:08:39,342 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-11-02 19:08:39,345 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-11-02 19:08:39,345 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Nov 02 19:08:39
+2022-11-02 19:08:39,346 INFO util.GSet: Computing capacity for map BlocksMap
+2022-11-02 19:08:39,346 INFO util.GSet: VM type       = 64-bit
+2022-11-02 19:08:39,347 INFO util.GSet: 2.0% max memory 30.0 GB = 613.8 MB
+2022-11-02 19:08:39,347 INFO util.GSet: capacity      = 2^26 = 67108864 entries
+2022-11-02 19:08:39,379 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-11-02 19:08:39,379 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-11-02 19:08:39,383 INFO Configuration.deprecation: No unit for dfs.namenode.safemode.extension(30000) assuming MILLISECONDS
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManager: defaultReplication         = 3
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-11-02 19:08:39,384 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-11-02 19:08:39,398 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-11-02 19:08:39,398 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-11-02 19:08:39,398 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-11-02 19:08:39,398 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-11-02 19:08:39,405 INFO util.GSet: Computing capacity for map INodeMap
+2022-11-02 19:08:39,405 INFO util.GSet: VM type       = 64-bit
+2022-11-02 19:08:39,405 INFO util.GSet: 1.0% max memory 30.0 GB = 306.9 MB
+2022-11-02 19:08:39,405 INFO util.GSet: capacity      = 2^25 = 33554432 entries
+2022-11-02 19:08:39,419 INFO namenode.FSDirectory: ACLs enabled? false
+2022-11-02 19:08:39,419 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-11-02 19:08:39,419 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-11-02 19:08:39,420 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-11-02 19:08:39,424 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-11-02 19:08:39,425 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-11-02 19:08:39,428 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-11-02 19:08:39,428 INFO util.GSet: VM type       = 64-bit
+2022-11-02 19:08:39,428 INFO util.GSet: 0.25% max memory 30.0 GB = 76.7 MB
+2022-11-02 19:08:39,428 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-11-02 19:08:39,438 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-11-02 19:08:39,438 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-11-02 19:08:39,438 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-11-02 19:08:39,441 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-11-02 19:08:39,441 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-11-02 19:08:39,442 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-11-02 19:08:39,442 INFO util.GSet: VM type       = 64-bit
+2022-11-02 19:08:39,442 INFO util.GSet: 0.029999999329447746% max memory 30.0 GB = 9.2 MB
+2022-11-02 19:08:39,442 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-11-02 19:08:39,459 INFO namenode.FSImage: Allocated new BlockPoolId: BP-902074082-198.202.101.109-1667423319454
+2022-11-02 19:08:39,469 INFO common.Storage: Storage directory /scratch/apingili/job_17274177/namenode_data has been successfully formatted.
+2022-11-02 19:08:39,495 INFO namenode.FSImageFormatProtobuf: Saving image file /scratch/apingili/job_17274177/namenode_data/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-11-02 19:08:39,575 INFO namenode.FSImageFormatProtobuf: Image file /scratch/apingili/job_17274177/namenode_data/current/fsimage.ckpt_0000000000000000000 of size 405 bytes saved in 0 seconds .
+2022-11-02 19:08:39,589 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-11-02 19:08:39,593 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-11-02 19:08:39,593 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at exp-12-54/198.202.101.109
+************************************************************/
+myHadoop:  
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/apingili/expansecluster/spark
+myHadoop:  
+To use Spark, you will want to type the following commands:"
+  source /home/apingili/expansecluster/spark/spark-env.sh
+  myspark start
+Starting namenodes on [exp-12-54]
+Starting datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:cKctk+2hq0wqnetp8EBiCYswrGxavgBqGi0IYE96aT8.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/apingili/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/apingili/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Starting secondary namenodes [exp-12-54]
+starting org.apache.spark.deploy.master.Master, logging to /scratch/apingili/job_17274177/logs/spark-apingili-org.apache.spark.deploy.master.Master-1-exp-12-54.out
+exp-12-54: starting org.apache.spark.deploy.worker.Worker, logging to /expanse/lustre/projects/uot182/fegaras/spark-3.1.2-bin-hadoop3.2/logs/spark-apingili-org.apache.spark.deploy.worker.Worker-1-exp-12-54.out
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/expanse/lustre/projects/uot182/fegaras/spark-3.1.2-bin-hadoop3.2/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-11-02 19:09:04,612 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-11-02 19:09:04,762 INFO spark.SparkContext: Running Spark version 3.1.2
+2022-11-02 19:09:04,793 INFO resource.ResourceUtils: ==============================================================
+2022-11-02 19:09:04,793 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2022-11-02 19:09:04,793 INFO resource.ResourceUtils: ==============================================================
+2022-11-02 19:09:04,793 INFO spark.SparkContext: Submitted application: Spark_Add
+2022-11-02 19:09:04,808 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 8192, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2022-11-02 19:09:04,823 INFO resource.ResourceProfile: Limiting resource is cpu
+2022-11-02 19:09:04,823 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2022-11-02 19:09:04,856 INFO spark.SecurityManager: Changing view acls to: apingili
+2022-11-02 19:09:04,856 INFO spark.SecurityManager: Changing modify acls to: apingili
+2022-11-02 19:09:04,856 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-11-02 19:09:04,856 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-11-02 19:09:04,856 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(apingili); groups with view permissions: Set(); users  with modify permissions: Set(apingili); groups with modify permissions: Set()
+2022-11-02 19:09:05,036 INFO util.Utils: Successfully started service 'sparkDriver' on port 44077.
+2022-11-02 19:09:05,064 INFO spark.SparkEnv: Registering MapOutputTracker
+2022-11-02 19:09:05,086 INFO spark.SparkEnv: Registering BlockManagerMaster
+2022-11-02 19:09:05,099 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-11-02 19:09:05,100 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2022-11-02 19:09:05,102 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2022-11-02 19:09:05,113 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-801984e8-dc13-471a-b637-c141024542c4
+2022-11-02 19:09:05,138 INFO memory.MemoryStore: MemoryStore started with capacity 4.6 GiB
+2022-11-02 19:09:05,150 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2022-11-02 19:09:05,219 INFO util.log: Logging initialized @1715ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-11-02 19:09:05,286 INFO server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 11.0.2+9
+2022-11-02 19:09:05,299 INFO server.Server: Started @1796ms
+2022-11-02 19:09:05,328 INFO server.AbstractConnector: Started ServerConnector@4f6b7109{HTTP/1.1, (http/1.1)}{exp-12-54:4040}
+2022-11-02 19:09:05,328 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2022-11-02 19:09:05,345 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@a18649a{/jobs,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,347 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@20134094{/jobs/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,348 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@706fe5c6{/jobs/job,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,350 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6629ad09{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,351 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3e7c4815{/stages,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,351 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@c35af2a{/stages/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,352 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1835d3ed{/stages/stage,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,353 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@70c0a3d5{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,354 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@260a3a5e{/stages/pool,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,355 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3c0bbc9f{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,355 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6438a7fe{/storage,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,356 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4f5f6e45{/storage/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,357 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@407873d3{/storage/rdd,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,357 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5412bfea{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,358 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4743a322{/environment,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,358 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@381d7219{/environment/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,359 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@13fed1ec{/executors,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,360 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@329a1f8d{/executors/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,360 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6fc29daa{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,362 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4d62f4c6{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,369 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@ebd06a9{/static,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,370 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1f3165e7{/,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,371 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1d5d5621{/api,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,371 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@45c2e0a6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,372 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@a7ad6e5{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,373 INFO ui.SparkUI: Bound SparkUI to exp-12-54, and started at http://exp-12-54.expanse.sdsc.edu:4040
+2022-11-02 19:09:05,389 INFO spark.SparkContext: Added JAR file:/home/apingili/project4/add.jar at spark://exp-12-54.expanse.sdsc.edu:44077/jars/add.jar with timestamp 1667423344756
+2022-11-02 19:09:05,544 INFO client.StandaloneAppClient$ClientEndpoint: Connecting to master spark://exp-12-54:7077...
+2022-11-02 19:09:05,585 INFO client.TransportClientFactory: Successfully created connection to exp-12-54/198.202.101.109:7077 after 23 ms (0 ms spent in bootstraps)
+2022-11-02 19:09:05,701 INFO cluster.StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20221102140905-0000
+2022-11-02 19:09:05,708 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41777.
+2022-11-02 19:09:05,708 INFO netty.NettyBlockTransferService: Server created on exp-12-54.expanse.sdsc.edu:41777
+2022-11-02 19:09:05,709 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-11-02 19:09:05,714 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, exp-12-54.expanse.sdsc.edu, 41777, None)
+2022-11-02 19:09:05,716 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221102140905-0000/0 on worker-20221102140857-198.202.101.109-43891 (198.202.101.109:43891) with 128 core(s)
+2022-11-02 19:09:05,718 INFO storage.BlockManagerMasterEndpoint: Registering block manager exp-12-54.expanse.sdsc.edu:41777 with 4.6 GiB RAM, BlockManagerId(driver, exp-12-54.expanse.sdsc.edu, 41777, None)
+2022-11-02 19:09:05,718 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221102140905-0000/0 on hostPort 198.202.101.109:43891 with 128 core(s), 8.0 GiB RAM
+2022-11-02 19:09:05,720 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, exp-12-54.expanse.sdsc.edu, 41777, None)
+2022-11-02 19:09:05,721 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, exp-12-54.expanse.sdsc.edu, 41777, None)
+2022-11-02 19:09:05,824 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221102140905-0000/0 is now RUNNING
+2022-11-02 19:09:05,834 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7523a3dc{/metrics/json,null,AVAILABLE,@Spark}
+2022-11-02 19:09:05,867 INFO cluster.StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2022-11-02 19:09:06,217 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 177.4 KiB, free 4.6 GiB)
+2022-11-02 19:09:06,275 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.6 KiB, free 4.6 GiB)
+2022-11-02 19:09:06,278 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on exp-12-54.expanse.sdsc.edu:41777 (size: 27.6 KiB, free: 4.6 GiB)
+2022-11-02 19:09:06,280 INFO spark.SparkContext: Created broadcast 0 from textFile at Add.scala:44
+2022-11-02 19:09:06,669 INFO mapred.FileInputFormat: Total input files to process : 1
+2022-11-02 19:09:06,701 INFO net.NetworkTopology: Adding a new node: /default-rack/198.202.101.109:9866
+2022-11-02 19:09:06,755 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 177.4 KiB, free 4.6 GiB)
+2022-11-02 19:09:06,762 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 27.6 KiB, free 4.6 GiB)
+2022-11-02 19:09:06,762 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on exp-12-54.expanse.sdsc.edu:41777 (size: 27.6 KiB, free: 4.6 GiB)
+2022-11-02 19:09:06,763 INFO spark.SparkContext: Created broadcast 1 from textFile at Add.scala:44
+2022-11-02 19:09:06,777 INFO mapred.FileInputFormat: Total input files to process : 1
+2022-11-02 19:09:06,780 INFO net.NetworkTopology: Adding a new node: /default-rack/198.202.101.109:9866
+2022-11-02 19:09:06,825 INFO Configuration.deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2022-11-02 19:09:06,827 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+2022-11-02 19:09:06,828 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2022-11-02 19:09:06,828 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2022-11-02 19:09:06,848 INFO spark.SparkContext: Starting job: runJob at SparkHadoopWriter.scala:83
+2022-11-02 19:09:06,860 INFO scheduler.DAGScheduler: Registering RDD 2 (map at Add.scala:44) as input to shuffle 2
+2022-11-02 19:09:06,862 INFO scheduler.DAGScheduler: Registering RDD 4 (map at Add.scala:46) as input to shuffle 0
+2022-11-02 19:09:06,863 INFO scheduler.DAGScheduler: Registering RDD 7 (map at Add.scala:44) as input to shuffle 3
+2022-11-02 19:09:06,864 INFO scheduler.DAGScheduler: Registering RDD 9 (map at Add.scala:46) as input to shuffle 1
+2022-11-02 19:09:06,865 INFO scheduler.DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:83) with 2 output partitions
+2022-11-02 19:09:06,865 INFO scheduler.DAGScheduler: Final stage: ResultStage 4 (runJob at SparkHadoopWriter.scala:83)
+2022-11-02 19:09:06,866 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 1, ShuffleMapStage 3)
+2022-11-02 19:09:06,867 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 1, ShuffleMapStage 3)
+2022-11-02 19:09:06,872 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Add.scala:44), which has no missing parents
+2022-11-02 19:09:06,896 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 6.9 KiB, free 4.6 GiB)
+2022-11-02 19:09:06,899 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 4.6 GiB)
+2022-11-02 19:09:06,900 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on exp-12-54.expanse.sdsc.edu:41777 (size: 3.8 KiB, free: 4.6 GiB)
+2022-11-02 19:09:06,900 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1388
+2022-11-02 19:09:06,914 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-02 19:09:06,914 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+2022-11-02 19:09:06,933 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[7] at map at Add.scala:44), which has no missing parents
+2022-11-02 19:09:06,938 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 6.9 KiB, free 4.6 GiB)
+2022-11-02 19:09:06,939 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 3.8 KiB, free 4.6 GiB)
+2022-11-02 19:09:06,940 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on exp-12-54.expanse.sdsc.edu:41777 (size: 3.8 KiB, free: 4.6 GiB)
+2022-11-02 19:09:06,941 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1388
+2022-11-02 19:09:06,941 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[7] at map at Add.scala:44) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-02 19:09:06,942 INFO scheduler.TaskSchedulerImpl: Adding task set 2.0 with 2 tasks resource profile 0
+2022-11-02 19:09:07,541 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.101.109:44598) with ID 0,  ResourceProfileId 0
+2022-11-02 19:09:07,647 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.101.109:42405 with 4.6 GiB RAM, BlockManagerId(0, 198.202.101.109, 42405, None)
+2022-11-02 19:09:07,746 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 0) (198.202.101.109, executor 0, partition 1, NODE_LOCAL, 4519 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:07,748 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 2.0 (TID 1) (198.202.101.109, executor 0, partition 1, NODE_LOCAL, 4519 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:07,963 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 198.202.101.109:42405 (size: 3.8 KiB, free: 4.6 GiB)
+2022-11-02 19:09:07,964 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.101.109:42405 (size: 3.8 KiB, free: 4.6 GiB)
+2022-11-02 19:09:08,211 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.101.109:42405 (size: 27.6 KiB, free: 4.6 GiB)
+2022-11-02 19:09:08,212 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.101.109:42405 (size: 27.6 KiB, free: 4.6 GiB)
+2022-11-02 19:09:10,471 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 2) (198.202.101.109, executor 0, partition 0, ANY, 4519 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:10,472 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 3) (198.202.101.109, executor 0, partition 0, ANY, 4519 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:17,598 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 0) in 9863 ms on 198.202.101.109 (executor 0) (1/2)
+2022-11-02 19:09:18,331 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 2.0 (TID 1) in 10583 ms on 198.202.101.109 (executor 0) (1/2)
+2022-11-02 19:09:19,393 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 3) in 8921 ms on 198.202.101.109 (executor 0) (2/2)
+2022-11-02 19:09:19,393 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2022-11-02 19:09:19,395 INFO scheduler.DAGScheduler: ShuffleMapStage 2 (map at Add.scala:44) finished in 12.458 s
+2022-11-02 19:09:19,395 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-02 19:09:19,396 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 0)
+2022-11-02 19:09:19,396 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 1, ShuffleMapStage 3, ResultStage 4)
+2022-11-02 19:09:19,396 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-02 19:09:19,398 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[9] at map at Add.scala:46), which has no missing parents
+2022-11-02 19:09:19,410 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 7.8 KiB, free 4.6 GiB)
+2022-11-02 19:09:19,412 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 4.6 GiB)
+2022-11-02 19:09:19,412 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on exp-12-54.expanse.sdsc.edu:41777 (size: 4.2 KiB, free: 4.6 GiB)
+2022-11-02 19:09:19,413 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1388
+2022-11-02 19:09:19,413 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[9] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-02 19:09:19,413 INFO scheduler.TaskSchedulerImpl: Adding task set 3.0 with 2 tasks resource profile 0
+2022-11-02 19:09:19,416 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.0 (TID 4) (198.202.101.109, executor 0, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:19,416 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.0 (TID 5) (198.202.101.109, executor 0, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:19,436 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.101.109:42405 (size: 4.2 KiB, free: 4.6 GiB)
+2022-11-02 19:09:19,454 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.101.109:44598
+2022-11-02 19:09:19,469 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 2) in 9000 ms on 198.202.101.109 (executor 0) (2/2)
+2022-11-02 19:09:19,469 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2022-11-02 19:09:19,470 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (map at Add.scala:44) finished in 12.583 s
+2022-11-02 19:09:19,470 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-02 19:09:19,470 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 3)
+2022-11-02 19:09:19,470 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 1, ResultStage 4)
+2022-11-02 19:09:19,470 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-02 19:09:19,470 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[4] at map at Add.scala:46), which has no missing parents
+2022-11-02 19:09:19,473 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 7.8 KiB, free 4.6 GiB)
+2022-11-02 19:09:19,474 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 4.6 GiB)
+2022-11-02 19:09:19,475 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on exp-12-54.expanse.sdsc.edu:41777 (size: 4.2 KiB, free: 4.6 GiB)
+2022-11-02 19:09:19,475 INFO spark.SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1388
+2022-11-02 19:09:19,476 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[4] at map at Add.scala:46) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-02 19:09:19,476 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+2022-11-02 19:09:19,477 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 6) (198.202.101.109, executor 0, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:19,478 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 7) (198.202.101.109, executor 0, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:19,492 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.101.109:42405 (size: 4.2 KiB, free: 4.6 GiB)
+2022-11-02 19:09:19,499 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.101.109:44598
+2022-11-02 19:09:30,347 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 3.0 (TID 5) in 10931 ms on 198.202.101.109 (executor 0) (1/2)
+2022-11-02 19:09:30,362 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 7) in 10884 ms on 198.202.101.109 (executor 0) (1/2)
+2022-11-02 19:09:30,565 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 3.0 (TID 4) in 11150 ms on 198.202.101.109 (executor 0) (2/2)
+2022-11-02 19:09:30,566 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2022-11-02 19:09:30,566 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (map at Add.scala:46) finished in 11.161 s
+2022-11-02 19:09:30,566 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-02 19:09:30,566 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 1)
+2022-11-02 19:09:30,566 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 4)
+2022-11-02 19:09:30,566 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-02 19:09:30,665 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 6) in 11188 ms on 198.202.101.109 (executor 0) (2/2)
+2022-11-02 19:09:30,665 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2022-11-02 19:09:30,666 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (map at Add.scala:46) finished in 11.194 s
+2022-11-02 19:09:30,666 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-02 19:09:30,666 INFO scheduler.DAGScheduler: running: Set()
+2022-11-02 19:09:30,666 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 4)
+2022-11-02 19:09:30,666 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-02 19:09:30,666 INFO scheduler.DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[14] at saveAsTextFile at Add.scala:58), which has no missing parents
+2022-11-02 19:09:30,678 INFO memory.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 86.4 KiB, free 4.6 GiB)
+2022-11-02 19:09:30,679 INFO memory.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 31.3 KiB, free 4.6 GiB)
+2022-11-02 19:09:30,680 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on exp-12-54.expanse.sdsc.edu:41777 (size: 31.3 KiB, free: 4.6 GiB)
+2022-11-02 19:09:30,680 INFO spark.SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1388
+2022-11-02 19:09:30,681 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 4 (MapPartitionsRDD[14] at saveAsTextFile at Add.scala:58) (first 15 tasks are for partitions Vector(0, 1))
+2022-11-02 19:09:30,681 INFO scheduler.TaskSchedulerImpl: Adding task set 4.0 with 2 tasks resource profile 0
+2022-11-02 19:09:30,683 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 4.0 (TID 8) (198.202.101.109, executor 0, partition 0, PROCESS_LOCAL, 4338 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:30,684 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 4.0 (TID 9) (198.202.101.109, executor 0, partition 1, PROCESS_LOCAL, 4338 bytes) taskResourceAssignments Map()
+2022-11-02 19:09:30,696 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.101.109:42405 (size: 31.3 KiB, free: 4.6 GiB)
+2022-11-02 19:09:30,744 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.101.109:44598
+2022-11-02 19:09:30,748 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.101.109:44598
+2022-11-02 19:11:00,969 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 4.0 (TID 9) in 90286 ms on 198.202.101.109 (executor 0) (1/2)
+2022-11-02 19:11:03,582 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 4.0 (TID 8) in 92900 ms on 198.202.101.109 (executor 0) (2/2)
+2022-11-02 19:11:03,583 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2022-11-02 19:11:03,583 INFO scheduler.DAGScheduler: ResultStage 4 (runJob at SparkHadoopWriter.scala:83) finished in 92.916 s
+2022-11-02 19:11:03,586 INFO scheduler.DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-11-02 19:11:03,586 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+2022-11-02 19:11:03,588 INFO scheduler.DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:83, took 116.739492 s
+2022-11-02 19:11:03,652 INFO io.SparkHadoopWriter: Job job_202211021409067132779089679728714_0014 committed.
+2022-11-02 19:11:03,658 INFO server.AbstractConnector: Stopped Spark@4f6b7109{HTTP/1.1, (http/1.1)}{exp-12-54:4040}
+2022-11-02 19:11:03,659 INFO ui.SparkUI: Stopped Spark web UI at http://exp-12-54.expanse.sdsc.edu:4040
+2022-11-02 19:11:03,662 INFO cluster.StandaloneSchedulerBackend: Shutting down all executors
+2022-11-02 19:11:03,662 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+2022-11-02 19:11:03,674 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2022-11-02 19:11:03,693 INFO memory.MemoryStore: MemoryStore cleared
+2022-11-02 19:11:03,694 INFO storage.BlockManager: BlockManager stopped
+2022-11-02 19:11:03,697 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+2022-11-02 19:11:03,699 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2022-11-02 19:11:03,735 INFO spark.SparkContext: Successfully stopped SparkContext
+2022-11-02 19:11:03,738 INFO util.ShutdownHookManager: Shutdown hook called
+2022-11-02 19:11:03,738 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-cfdd2375-45b6-4570-92b1-fe3ca982dce3
+2022-11-02 19:11:03,751 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-a034be88-a035-49de-a61f-8c299df80917
+Stopping namenodes on [exp-12-54]
+Stopping datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:cKctk+2hq0wqnetp8EBiCYswrGxavgBqGi0IYE96aT8.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/apingili/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/apingili/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Stopping secondary namenodes [exp-12-54]
+Copying Hadoop logs back to /home/apingili/expansecluster/logs...
+'/scratch/apingili/job_17274177/logs' -> '/home/apingili/expansecluster/logs'
+'/scratch/apingili/job_17274177/logs/hadoop-apingili-namenode-exp-12-54.out' -> '/home/apingili/expansecluster/logs/hadoop-apingili-namenode-exp-12-54.out'
+'/scratch/apingili/job_17274177/logs/SecurityAuth-apingili.audit' -> '/home/apingili/expansecluster/logs/SecurityAuth-apingili.audit'
+'/scratch/apingili/job_17274177/logs/hadoop-apingili-datanode-exp-12-54.out' -> '/home/apingili/expansecluster/logs/hadoop-apingili-datanode-exp-12-54.out'
+'/scratch/apingili/job_17274177/logs/hadoop-apingili-namenode-exp-12-54.log' -> '/home/apingili/expansecluster/logs/hadoop-apingili-namenode-exp-12-54.log'
+'/scratch/apingili/job_17274177/logs/hadoop-apingili-datanode-exp-12-54.log' -> '/home/apingili/expansecluster/logs/hadoop-apingili-datanode-exp-12-54.log'
+'/scratch/apingili/job_17274177/logs/hadoop-apingili-secondarynamenode-exp-12-54.out' -> '/home/apingili/expansecluster/logs/hadoop-apingili-secondarynamenode-exp-12-54.out'
+'/scratch/apingili/job_17274177/logs/hadoop-apingili-secondarynamenode-exp-12-54.log' -> '/home/apingili/expansecluster/logs/hadoop-apingili-secondarynamenode-exp-12-54.log'
+'/scratch/apingili/job_17274177/logs/spark-apingili-org.apache.spark.deploy.master.Master-1-exp-12-54.out' -> '/home/apingili/expansecluster/logs/spark-apingili-org.apache.spark.deploy.master.Master-1-exp-12-54.out'
+removed '/scratch/apingili/job_17274177/tmp/dfs/namesecondary/current/VERSION'
+removed '/scratch/apingili/job_17274177/tmp/dfs/namesecondary/current/fsimage_0000000000000000036'
+removed '/scratch/apingili/job_17274177/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000036'
+removed '/scratch/apingili/job_17274177/tmp/dfs/namesecondary/current/fsimage_0000000000000000000'
+removed '/scratch/apingili/job_17274177/tmp/dfs/namesecondary/current/fsimage_0000000000000000036.md5'
+removed '/scratch/apingili/job_17274177/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5'
+removed directory '/scratch/apingili/job_17274177/tmp/dfs/namesecondary/current'
+removed directory '/scratch/apingili/job_17274177/tmp/dfs/namesecondary'
+removed directory '/scratch/apingili/job_17274177/tmp/dfs'
+removed directory '/scratch/apingili/job_17274177/tmp'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/VERSION'
+removed directory '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/tmp'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/VERSION'
+removed directory '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/rbw'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741829_1005.meta'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741825'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741828'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741826'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741827'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741830_1006.meta'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741828_1004.meta'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741830'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0/blk_1073741829'
+removed directory '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0/subdir0'
+removed directory '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized/subdir0'
+removed directory '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/finalized'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current/dfsUsed'
+removed directory '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/current'
+removed '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454/scanner.cursor'
+removed directory '/scratch/apingili/job_17274177/hdfs_data/current/BP-902074082-198.202.101.109-1667423319454'
+removed directory '/scratch/apingili/job_17274177/hdfs_data/current'
+removed directory '/scratch/apingili/job_17274177/hdfs_data'
+removed '/scratch/apingili/job_17274177/logs/hadoop-apingili-secondarynamenode-exp-12-54.out'
+removed '/scratch/apingili/job_17274177/logs/hadoop-apingili-datanode-exp-12-54.log'
+removed '/scratch/apingili/job_17274177/logs/SecurityAuth-apingili.audit'
+removed '/scratch/apingili/job_17274177/logs/hadoop-apingili-namenode-exp-12-54.log'
+removed '/scratch/apingili/job_17274177/logs/hadoop-apingili-secondarynamenode-exp-12-54.log'
+removed '/scratch/apingili/job_17274177/logs/hadoop-apingili-namenode-exp-12-54.out'
+removed '/scratch/apingili/job_17274177/logs/hadoop-apingili-datanode-exp-12-54.out'
+removed '/scratch/apingili/job_17274177/logs/spark-apingili-org.apache.spark.deploy.master.Master-1-exp-12-54.out'
+removed directory '/scratch/apingili/job_17274177/logs'
+removed '/scratch/apingili/job_17274177/namenode_data/current/VERSION'
+removed '/scratch/apingili/job_17274177/namenode_data/current/edits_0000000000000000001-0000000000000000036'
+removed '/scratch/apingili/job_17274177/namenode_data/current/fsimage_0000000000000000000'
+removed '/scratch/apingili/job_17274177/namenode_data/current/seen_txid'
+removed '/scratch/apingili/job_17274177/namenode_data/current/edits_inprogress_0000000000000000037'
+removed '/scratch/apingili/job_17274177/namenode_data/current/fsimage_0000000000000000000.md5'
+removed directory '/scratch/apingili/job_17274177/namenode_data/current'
+removed directory '/scratch/apingili/job_17274177/namenode_data'
+removed directory '/scratch/apingili/job_17274177/pids'
