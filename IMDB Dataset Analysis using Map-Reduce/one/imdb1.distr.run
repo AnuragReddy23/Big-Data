@@ -1,0 +1,35 @@
+#!/bin/bash
+#SBATCH -A uot182
+#SBATCH --job-name="imdb1 distr job"
+#SBATCH --output="imdb1.distr.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=120
+#SBATCH --mem=249325M
+#SBATCH --export=ALL
+#SBATCH --time=29
+
+export HADOOP_CONF_DIR=/home/$USER/expansecluster
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export HADOOP_HOME=$SW/hadoop-3.2.2
+export MYHADOOP_HOME=$SW/myhadoop
+PATH="$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$MYHADOOP_HOME/bin:$PATH"
+
+myhadoop-configure.sh -s /scratch/$USER/job_$SLURM_JOBID
+
+start-all.sh
+hdfs dfs -rm -r /user/$USER/*
+hdfs dfs -mkdir -p /user/$USER
+#hdfs dfs -mkdir -p /user/$USER/input1
+#echo "Directory created"
+hdfs dfs -put ~/DB2/Project3/one/title.basics.tsv /user/$USER/title.basics.tsv
+hdfs dfs -put ~/DB2/Project3/one/title.crew.tsv /user/$USER/title.crew.tsv
+hdfs dfs -put ~/DB2/Project3/one/imdb00-title-actors.csv /user/$USER/imdb00-title-actors.csv
+##echo "Transferred to directory"
+hadoop jar imdb1.jar imdb1 /user/$USER/title.basics.tsv /user/$USER/imdb00-title-actors.csv /user/$USER/title.crew.tsv /user/$USER/output-distr
+rm -rf output-distr
+mkdir output-distr
+hdfs dfs -get /user/$USER/output-distr/* output-distr
+stop-all.sh
+myhadoop-cleanup.sh
